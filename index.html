@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="imag">
+        <img src="imagen/logo.png" alt="Alternate Text" />
+    </div>
+
+
+    <div>
+        <form action="/" method="post" name="formul">
+            <table>
+                <tr>
+
+                    <td colspan="2"></td>
+                    <td class="encontrar" rowspan="4">
+                        <textarea style="display: none; text-align: center;" id="mostrar" name="txt_encrip"></textarea>
+                        <input type="button" value="Copiar" style="display:none;" id="copiar" onclick="copy()" />
+
+                        <img src="imagen/Muñeco.png" alt="Alternate Text" id="imagen" />
+                        <h2 class="msj" id="h2">Ningun mensaje fue encontrado</h2>
+                        <h6 id="h6">Ingresar el texto que desea encriptar o desencriptar</h6>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="texto" colspan="2"><textarea id="txtarea" rows="10" cols="50" placeholder="Ingrese texto aqui"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="alerta">
+                        <ul>
+                            <li><h6>Solo letras minúsculas y sin acentos</h6></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td>
+                        <input type="button" name="name" value="Encriptar" class="encriptar_1" onclick="encriptar()"/>
+                    </td>
+                    <td>
+                        <input type="button" name="name" value="Descriptar" class="encriptar_2" onclick="desencriptar()"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+
+</body>
+</html>
+
+<script>
+    
+
+    function encriptar() {
+        texto = document.getElementById("txtarea").value;
+        var textoEncriptado = texto.replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/a/gi, "ai").replace(/o/gi, "ober").replace(/u/gi, "ufat");
+        
+        document.formul.txt_encrip.value = textoEncriptado;
+        div = document.getElementById('mostrar');
+        div.style.display = '';
+
+        cop = document.getElementById('copiar');
+        cop.style.display = '';
+
+        img = document.getElementById('imagen');
+        img.style.display = 'none';
+        h2 = document.getElementById('h2');
+        h2.style.display = 'none';
+        h6 = document.getElementById('h6');
+        h6.style.display = 'none';
+    }
+
+
+    function desencriptar() {
+        texto = document.getElementById("txtarea").value;
+        var textoEncriptado = texto.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi, "u");
+
+        document.formul.txt_encrip.value = textoEncriptado;
+        div = document.getElementById('mostrar');
+        div.style.display = '';
+
+        img = document.getElementById('imagen');
+        img.style.display = 'none';
+        h2 = document.getElementById('h2');
+        h2.style.display = 'none';
+        h6 = document.getElementById('h6');
+        h6.style.display = 'none';
+    }
+
+    function copy(){
+        var content = document.getElementById('mostrar');
+        content.select();
+        document.execCommand('copy');
+    }
+
+</script>

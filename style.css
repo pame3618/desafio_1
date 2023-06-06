@@ -1,0 +1,120 @@
+﻿body {
+    font-family: 'Montserrat', sans-serif;
+    color: darkblue;
+}
+
+.imag{
+    margin: 15px;
+}
+
+table{
+margin-left: 15%;
+margin-right: 15%;
+}
+
+.texto{
+padding:30px;
+width:65%;
+}
+
+textarea{
+font-family: cursive;
+left: 10px;
+top: 80px;
+border-width: 0px;
+font-family: Garamond,verdana;
+font-size: 18pt;
+color: darkblue;
+width: 711px;
+height: 437px;
+outline: none;
+
+}
+
+.encontrar{
+    width:20%;
+    border: 2px solid darkblue;
+    border-radius: 20px;
+    margin-top:10px;
+}
+
+.encontrar textarea{
+ margin-top: 50px;
+    width: 250px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.encontrar input{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: gray;
+    border-radius: 40px;
+    color: darkblue;
+    width: 300px;
+    height: 60px;
+    background-color: lightgrey;
+    border-color: darkblue;
+    color: darkblue;
+    margin-left: 23px;
+    margin-top: 41px;
+}
+
+.encontrar img{
+    margin-top: 50px;
+    width: 250px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.encontrar h6{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+font-size: small;
+}
+
+li{
+    margin-left: 25px;
+}
+
+.msj{
+    font-family: Garamond,verdana;
+    font-size: 25px;
+    color: darkblue;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.alerta{
+color: gray;
+}
+
+.encriptar_1{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: darkblue;
+    border-radius: 40px;
+    color: white;
+    width: 300px;
+    height: 60px;
+
+}
+
+.encriptar_2{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: gray;
+    border-radius: 40px;
+    color: darkblue;
+    width: 300px;
+    height: 60px;
+    background-color: lightgrey;
+    border-color: darkblue;
+    color: darkblue;
+
+}
